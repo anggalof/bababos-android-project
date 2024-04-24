@@ -11,10 +11,20 @@ First, you will need to start **Metro**, the JavaScript _bundler_ that ships _wi
 To start Metro, run the following command from the _root_ of your React Native project:
 
 ```bash
+#Build Gradle
+buildToolsVersion = "34.0.0"
+minSdkVersion = 21
+compileSdkVersion = 34
+targetSdkVersion = 34
+ndkVersion = "25.1.8937393"
+```
+
+```bash
 #Node 18
 #React 18
 #React Native 0.73
 #Typescript 5
+#Java 17
 
 # using npx & npm
 
@@ -22,12 +32,15 @@ To start Metro, run the following command from the _root_ of your React Native p
 nvm use 18
 #Install
 npm install
+#Open Android Studio > Emulator
 #Adb
 adb device
 #First Build
 npx react-native run-android
 #Running Emulator
 npx react-native start
+#Reload
+R
 ```
 ## Tech Stack & Others
 ```bash
